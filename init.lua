@@ -456,6 +456,20 @@ require('lazy').setup({
             require('telescope.themes').get_dropdown(),
           },
         },
+        defaults = {
+          layout_strategy = 'vertical',
+          layout_config = {
+            height = 0.95,
+            width = 0.9,
+            preview_cutoff = 1,
+            results_height = 5,
+            vertical = {
+              prompt_position = 'top',
+              mirror = true,
+            },
+            -- vertical = { width = 0.7 },
+          },
+        },
       }
 
       -- Enable Telescope extensions if they are installed
