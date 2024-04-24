@@ -462,7 +462,7 @@ require('lazy').setup({
             height = 0.95,
             width = 0.9,
             preview_cutoff = 1,
-            results_height = 5,
+            -- results_height = 5,
             vertical = {
               prompt_position = 'top',
               mirror = true,
