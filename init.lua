@@ -708,6 +708,8 @@ require('lazy').setup({
           end,
         },
       }
+
+      require('lspconfig').ols.setup {}
     end,
   },
 
