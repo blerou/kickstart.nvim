@@ -183,7 +183,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- undotree
 
 vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, { desc = '[U]ndoTree on/off' })
-vim.opt.undodir = os.getenv 'HOME' .. '/.vim/undodir'
+vim.opt.undodir = os.getenv 'HOME' .. '/.local/state/nvim/undodir'
 vim.opt.undofile = true
 
 -- nav
