@@ -210,6 +210,7 @@ vim.keymap.set('n', '<leader>s', ':%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left>
 
 vim.keymap.set('n', '<leader>bk', vim.cmd.bd)
 
+vim.keymap.set('n', 'rg', ':!go run %\n')
 -- END my keys
 -- ==================================================
 
