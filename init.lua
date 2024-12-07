@@ -211,6 +211,7 @@ vim.keymap.set('n', '<leader>s', ':%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left>
 vim.keymap.set('n', '<leader>bk', vim.cmd.bd)
 
 vim.keymap.set('n', 'rg', ':!go run %\n')
+vim.keymap.set('n', 'rr', ':!racket %\n')
 -- END my keys
 -- ==================================================
 
@@ -1052,6 +1053,11 @@ require('lazy').setup {
       require('nvim-paredit').setup()
     end,
   },
+  { 'benknoble/vim-racket' },
+  { 'benknoble/vim-sexp' },
+  { 'tpope/vim-sexp-mappings-for-regular-people' },
+
+  -- { 'benknoble/vim-simpl' },
   -- =================================================
 }
 
