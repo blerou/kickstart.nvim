@@ -212,6 +212,7 @@ vim.keymap.set('n', '<leader>bk', vim.cmd.bd)
 
 vim.keymap.set('n', 'rg', ':!go run %\n')
 vim.keymap.set('n', 'rr', ':!racket %\n')
+vim.keymap.set('n', 'fr', ':!raco fmt %\n')
 -- END my keys
 -- ==================================================
 
