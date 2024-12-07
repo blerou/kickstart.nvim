@@ -965,6 +965,10 @@ require('lazy').setup {
     --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
     --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
   },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine"
+  },
   -- {
   --   'catppuccin/nvim',
   --   name = 'catppuccin',
