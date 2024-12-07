@@ -1053,11 +1053,11 @@ require('lazy').setup {
       require('nvim-paredit').setup()
     end,
   },
-  { 'benknoble/vim-racket' },
+  { 'tpope/vim-repeat' },
   { 'benknoble/vim-sexp' },
   { 'tpope/vim-sexp-mappings-for-regular-people' },
-
-  -- { 'benknoble/vim-simpl' },
+  { 'benknoble/vim-racket' },
+  { 'benknoble/vim-simpl' },
   -- =================================================
 }
 
