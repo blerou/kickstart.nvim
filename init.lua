@@ -237,6 +237,22 @@ vim.api.nvim_create_autocmd('ExitPre', {
   end,
 })
 
+-- racket
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'racket',
+  callback = function(_)
+    vim.lsp.start {
+      name = 'my-server-name',
+      cmd = { 'racket', '-l', 'racket-langserver' },
+      -- Set the "root directory" to the parent directory of the file in the
+      -- current buffer (`args.buf`) that contains either a "setup.py" or a
+      -- "pyproject.toml" file. Files that share a root directory will reuse
+      -- the connection to the same LSP server.
+      -- root_dir = vim.fs.root(args.buf, { 'setup.py', 'pyproject.toml' }),
+    }
+  end,
+})
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
