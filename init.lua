@@ -1073,8 +1073,8 @@ require('lazy').setup {
     end,
   },
   { 'tpope/vim-repeat' },
-  { 'benknoble/vim-sexp' },
-  { 'tpope/vim-sexp-mappings-for-regular-people' },
+  -- { 'benknoble/vim-sexp' },
+  -- { 'tpope/vim-sexp-mappings-for-regular-people' },
   { 'benknoble/vim-racket' },
   -- { 'benknoble/vim-simpl' },
   -- =================================================
